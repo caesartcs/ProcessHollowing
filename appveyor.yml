@@ -3,7 +3,6 @@ branches:
   only:
   - master
 configuration: Release
-platform: Any CPU
 build:
   verbosity: minimal
 artifacts:
