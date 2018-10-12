@@ -6,7 +6,7 @@ configuration: Release
 build:
   verbosity: minimal
 artifacts:
-- path: Hollowing\obj\Release\Hollowing.exe
+- path: Hollowing\obj\Release\program.exe
   name: hollowing
 deploy:
 - provider: S3
