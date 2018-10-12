@@ -1,0 +1,19 @@
+version: '{branch}.0.0.{build}'
+branches:
+  only:
+  - master
+configuration: Release
+platform: Any CPU
+build:
+  verbosity: minimal
+artifacts:
+- path: Hollowing\obj\Release\Hollowing.exe
+  name: hollowing
+deploy:
+- provider: S3
+  access_key_id: AKIAILQQPYN4PURIVHMA
+  secret_access_key:
+    secure: aXQUX/f+HX+1SEKsH1d65zQoe8mPjueaBNf7x5qrgrUihXmf9wCcOXeZ+5j3YdI0
+  region: us-east-2
+  bucket: op-deploy
+  set_public: false
